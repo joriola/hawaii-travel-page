@@ -1,3 +1,65 @@
+body {
+  font-family: "Glory", sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/diamond-head.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px;
+}
 h1 {
-  font-family: "Splash", cursive;
+  font-family: "Grape Nuts", cursive;
+  font-size: 96px;
+  margin: 30px 0;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+header a {
+  font-size: 14px;
+  background: white;
+  text-decoration: none;
+  color: black;
+  padding: 12px 16px;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 30px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  header a {
+    font-size: 10px;
+    padding: 10px 12px;
+  }
 }
