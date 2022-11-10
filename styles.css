@@ -1,5 +1,6 @@
 body {
   font-family: "Glory", sans-serif;
+  letter-spacing: 1px;
 }
 .container {
   max-width: 1000px;
@@ -27,8 +28,9 @@ header h2 {
 }
 
 header h3 {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
+  letter-spacing: 5px;
 }
 
 header a {
@@ -45,8 +47,42 @@ a:hover {
   text-decoration: underline;
 }
 
+section {
+  padding: 50px;
+}
+
+img {
+  max-width: 100%;
+}
+
 .grid {
   display: grid;
+  grid-gap: 20px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+main h2 {
+  font-size: 16px;
+  opacity: 0.5;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+main h3 {
+  font-size: 40px;
+  margin: 0;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.grid-footer {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -56,7 +92,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 50px;
 }
 
 footer h3 {
@@ -90,15 +125,15 @@ footer a {
   }
 
   header h1 {
-    font-size: 60px;
+    font-size: 72px;
   }
 
   header h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   header h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   header a {
@@ -106,10 +141,18 @@ footer a {
     padding: 10px 12px;
   }
 
-  footer {
-    padding: 40px;
+  section {
+    padding: 30px;
   }
 
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  footer {
+    text-align: center;
+  }
   footer h3 {
     font-size: 16px;
   }
